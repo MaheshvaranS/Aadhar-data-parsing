@@ -3,8 +3,8 @@ from skimage.io import imread
 import pytesseract
 import re
 
-#pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
+#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
 
 
 app = Flask(__name__)
