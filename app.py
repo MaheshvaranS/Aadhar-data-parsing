@@ -8,7 +8,7 @@ import re
 
 app = Flask(__name__)
 
-pytesseract.pytesseract.tesseract_cmd = '/app/./vendor/tesseract-ocr/share/tessdata'
+pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
 
 @app.route('/')
 def index():
