@@ -4,7 +4,7 @@ import pytesseract
 import re
 
 #pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
-
+pytesseract.pytesseract.tesseract_cmd = './vendor/tesseract-ocr/bin/tesseract'
 
 app = Flask(__name__)
 
