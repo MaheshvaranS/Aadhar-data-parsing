@@ -30,6 +30,6 @@ def upload_file():
 
     return render_template('index.html')
 if __name__ == '__main__':
-    app.run(threaded=True, debug=True)
+    app.run(port=8080, threaded=True, debug=True)
 
 
