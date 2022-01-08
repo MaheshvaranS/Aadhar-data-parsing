@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from skimage.io import imread
+from PIL import Image
 import pytesseract
 import re
 
@@ -19,7 +20,7 @@ def upload_file():
     uploaded_file = request.files['file']
     if uploaded_file.filename != '':
         print('file uploaded')
-        img=imread(uploaded_file)
+        img=Image.open(uploaded_file)
         data=pytesseract.image_to_string(img,lang='eng',config='--psm 6')
         pattern1=re.findall(r'[0-9]+ [0-9]+ [0-9]+',data)  
         print(pattern1)
