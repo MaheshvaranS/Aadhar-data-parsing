@@ -15,7 +15,7 @@ pytesseract.pytesseract.tesseract_cmd = './vendor/tesseract-ocr/bin/tesseract'
 def index():
     return render_template('index.html')
  
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/', methods=['POST'])
 def upload_file():
     uploaded_file = request.files['file']
     if uploaded_file.filename != '':
