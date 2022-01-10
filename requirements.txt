@@ -1,5 +1,6 @@
 Flask
 scikit-image
+pillow
 pytesseract
 gunicorn
 Jinja2
