@@ -4,12 +4,11 @@ from PIL import Image
 import pytesseract
 import re
 
-#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
 pytesseract.pytesseract.tesseract_cmd = './vendor/tesseract-ocr/bin/tesseract'
+#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files (x86)\Tesseract-OCR\tesseract.exe'
 
 app = Flask(__name__)
 
-pytesseract.pytesseract.tesseract_cmd = './vendor/tesseract-ocr/bin/tesseract'
 
 @app.route('/')
 def index():
